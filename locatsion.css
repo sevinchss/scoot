@@ -1,0 +1,440 @@
+* {
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root {
+    --kok: #495567;
+    --seriy: #939CAA;
+    --olov: #FCB72B;
+}
+
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+
+/* ----------------------header------------------- */
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.header_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.header_left a {
+    color: var(--seriy);
+}
+
+.header_left h1 {
+    color: var(--kok);
+}
+
+
+.header_left img {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 15px;
+    color: var(--seriy);
+}
+
+
+.header_right button {
+    background-color: var(--olov);
+    border: none;
+    color: white;
+    padding: 11px 22px;
+}
+
+
+.header_right button:hover {
+    background-color: transparent;
+    border: 1px solid var(--olov);
+    color: var(--olov);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1080px) {
+
+
+    .header_right button {
+        display: none;
+    }
+
+    .header_left img {
+        display: flex;
+    }
+
+    .header_burger {
+        width: 20px;
+        height: 16px;
+    }
+
+
+    header ul {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .header_burger {
+        gap: 200px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* ---------------hero-------------------- */
+
+
+.hero {
+    background-image: url(images/hreo111.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+/* --------------------sc3------------ */
+
+
+.xizmat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 0 0 100px;
+    align-items: center;
+}
+
+
+.xizmat_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 450px;
+}
+
+
+.xizmat_text h1 {
+    font-size: 48px;
+    color: var(--kok);
+}
+
+
+.xizmat_text p {
+    color: var(--seriy);
+} 
+
+
+
+.xizmat_text button {
+    background-color: var(--olov);
+    border: none;
+    color: white;
+    padding: 11px 22px;
+    width: 180px;
+}
+
+.xizmat_text button:hover {
+    background-color: transparent;
+    border: 1px solid var(--olov);
+    color: var(--olov);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+    .xizmat {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .xizmat img {
+        width: 400px;
+        height: 310px;
+    }
+
+    .xizmat_text {
+        padding-top: 40px;
+        width: 350px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .xizmat_text h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* ----------------sc3---------- */
+
+
+.sc3text {
+    text-align: center;
+    color: var(--kok);
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+
+
+.values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+
+
+.values div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    text-align: center;
+    gap: 30px;
+}
+
+
+
+.values div h3 {
+    color: var(--kok);
+}
+
+.values div p {
+    color: var(--seriy);
+}
+
+
+
+@media (max-width: 1080px) {
+    .sc3text {
+        font-size: 30px;
+    }
+
+    .values {
+        justify-content: center;
+    }
+}
+
+/* ------------sc4-------------- */
+
+.sc4_control {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.widhts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    margin: 0 auto;
+    width: 1110px;
+    height: 130px;
+    background-color: #E5ECF4;
+}
+
+
+.widhts button {
+    background-color: var(--olov);
+    border: none;
+    color: white;
+    padding: 11px 22px;
+    width: 180px;
+}
+
+
+.widhts button:hover {
+    background-color: transparent;
+    border: 1px solid var(--olov);
+    color: var(--olov);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+
+.widhts h2, span {
+    color: var(--kok);
+}
+
+
+
+@media (max-width: 1080px) {
+    .widhts {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        text-align: center;
+        width: 310px;
+        height: 200px;
+    }
+}
+
+
+
+
+/* --------------aps----------- */
+
+.apps {
+    margin-top: 80px;
+    background-color: #495567;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+
+
+.apps div h1 {
+    font-size: 48px;
+    width: 450px;
+    color: white;
+}
+
+
+
+@media (max-width: 1080px) {
+    .apps {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 40px;
+    } 
+
+    .apps div h1 {
+        text-align: center;
+        font-size: 30px;
+        width: 310px;
+    }
+
+
+    .img_app {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
+}
+
+
+/* -footer-------------- */
+
+
+footer {
+    background-color: #333A44;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.footerul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+footer h1 {
+    color: white;
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: var(--seriy);
+}
+
+
+footer ul a {
+    color: var(--seriy);
+}
+
+
+footer ul a:hover {
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 1.9rem;
+}
+
+
+
+.brands i {
+    color: var(--olov);
+    cursor: pointer;
+}
+
+
+.brands i:hover {
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+
+@media (max-width: 1080px) {
+    footer {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .footerul {
+        flex-direction: column;
+    }
+
+    .footerul ul {
+        align-items: center;
+        flex-direction: column;
+    }
+}
